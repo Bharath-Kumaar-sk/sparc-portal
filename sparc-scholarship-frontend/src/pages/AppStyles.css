@@ -1,0 +1,119 @@
+/* --- Global Background --- */
+body {
+    background-color: #f4f7f6; /* Soft gray/blue background makes the page feel "full" */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- The Main Card --- */
+.form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff; /* Crisp white card */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 42, 106, 0.08); /* Soft shadow with a hint of CPCL blue */
+}
+
+/* --- Header & Logo --- */
+.header-section {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eef2f5;
+    padding-bottom: 20px;
+}
+
+.cpcl-logo {
+    max-width: 140px;
+    margin-bottom: 15px;
+}
+
+.header-section h2 {
+    color: #003366; /* Corporate Dark Blue */
+    margin: 0 0 5px 0;
+    font-size: 24px;
+}
+
+.header-section p {
+    color: #6c757d;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* --- Form Inputs --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 14px;
+}
+
+/* Larger, softer inputs are easier to read */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid #dce1e6;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #0056b3; /* Highlight color on focus */
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1); /* Soft glow so users know where they are */
+}
+
+/* --- Buttons --- */
+.submit-btn {
+    background-color: #0056b3; /* Strong Call to Action */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    background-color: #004494;
+}
+
+.submit-btn:active {
+    transform: scale(0.98); /* Satisfying click effect */
+}
+
+/* Validation Error Text */
+.error-text {
+    color: #d32f2f; /* Slightly deeper red for better contrast */
+    font-size: 14px; /* Increased from 12px */
+    font-weight: 500; /* Makes it just bold enough to stand out */
+    margin-top: 6px;
+    display: block;
+}
+
+.success-text {
+    color: #2e7d32; /* A strong, readable green */
+    font-size: 14.5px;
+    font-weight: 600;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e8f5e9; /* Light green background box */
+    border-radius: 6px;
+    text-align: center;
+    display: block;
+}
